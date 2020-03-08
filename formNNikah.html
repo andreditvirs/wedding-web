@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulir Pernikahan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Include SmartWizard CSS -->
+    <link href="css/smart_wizard.css" rel="stylesheet" type="text/css" />
+
+    <!-- Optional SmartWizard theme -->
+    <link href="css/smart_wizard_theme_circles.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- Template -->
+        <!-- IONICON STYLE SHEET FOR BEAUTIFUL ICONS -->
+    <link href="assets/css/ionicons.css" rel="stylesheet" />
+    <!-- STYLE FOR OPENING IMAGE IN POPUP USING FANCYBOX-->
+    <link href="assets/js/source/jquery.fancybox.css" rel="stylesheet" />
+    <!-- CUSTOM CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body >
+        <div class="navbar navbar-default navbar-fixed-top scroll-me  mb-0 pb-0">
+        <!-- pass scroll-me class above a tags to starts scrolling -->
+        <div class="container">
+            <div class="navbar-header row">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/NNikah_logo.png"  alt=""/>
+                </a>
+                <div class="col-md-8 pl-0">
+                    <a href="index.html">
+                        <p style="color:white">Kembali ke Beranda</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <div class="view" style="background-color:pink; background-repeat: no-repeat; background-size: cover; background-position: center;padding-bottom: 10pt">
+	    <div class="container"style="background-color: white">
+	        <br />
+	        <div class="row justify-content-center  align-items-center mt-3 pb-5" >
+	            <div class="col-md-11">
+<!-- 	                <form action="#" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8"> -->
+	                <!-- SmartWizard html -->
+	                <div id="smartwizard">
+	                        <ul>
+	                          <li><a href="#step-1">Identitas Calon Suami<br /><small>Siapkan KTP Suami</small></a></li>
+	                          <li><a href="#step-2">Identitas Calon Istri<br /><small>Siapkan KTP Istri</small></a></li>
+	                          <li><a href="#step-3">Izin Orang Tua Suami<br /><small>Identitas Orang Tua/Wali Suami</small></a></li>
+	                          <li><a href="#step-4">Izin Orang Tua Istri<br /><small>Identitas Orang Tua/Wali Istri</small></a></li>
+	                          <li><a href="#step-5">Verifikasi<br /><small>Konfirmasi</small></a></li>
+	                        </ul>
+	                    <div>
+	                        <div id="step-1" class="mt-1">
+	                            <h2 class="mt-3" style="font-weight: bold; color: #6c757d">Formulir untuk Calon Suami</h2>
+	                            <hr>
+	                            <h6 class="mb-4" style="color :grey; font-style: italic">*) Berisi identitas untuk calon suami sesuai dengan kartu identitas yang Anda punya</h6>
+	                            <div id="form-step-0" role="form" data-toggle="validator">
+	                                <div class="form-group row">
+	                                    <label for="nama_lengkap0" class="col-sm-2 col-form-label">Nama Lengkap </label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="nama_lengkap0" placeholder="Tuliskan nama lengkap Anda sesuai KTP..." oninvalid="this.setCustomValidity('Silahkan masukkan nama lengkap Anda')" oninput="setCustomValidity('')" required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_lahir0" class="col-sm-2 col-form-label">Tempat Lahir  </label>
+	                                    <div class="col-sm-3 mb-0">
+	                                        <input type="text" class="form-control" id="tempat_lahir0" placeholder="Tempat lahir Anda.." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tanggal_lahir0" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+	                                    <div class="col-sm-2 mb-0">
+	                                        <input type="number" class="form-control" id="hari_lahir0" placeholder="Hari" min="1" max="30" required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>                         
+	                                    <div class="form-group col-sm-5 mb-0">
+	                                        <select id="bulan_lahir0" class="custom-select custom-select-md" required>
+	                                            <option value="" selected disabled>Bulan...</option>
+	                                            <option value="1">Januari</option>
+	                                            <option value="2">Februari</option>
+	                                            <option value="3">Maret</option>
+	                                            <option value="4">April</option>
+	                                            <option value="5">Mei</option>
+	                                            <option value="6">Juni</option>
+	                                            <option value="7">Juli</option>
+	                                            <option value="8">Agustus</option>
+	                                            <option value="9">September</option>
+	                                            <option value="10">Oktober</option>
+	                                            <option value="11">November</option>
+	                                            <option value="12">Desember</option>
+	                                        </select>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                    <div class="form-group col-sm-3 mb-0">
+	                                        <input type="number" class="form-control" id="tahun_lahir0" placeholder="Tahun" min="1900" max="2019" required>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="status0" class="col-sm-2 col-form-label">Warga negara</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="status0" placeholder="Tuliskan kewarganegaraan Anda sesuai Kartu Identitas..." required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="agama0" class="col-sm-2 col-form-label">Agama</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <select id="agama0" class="custom-select custom-select-md" required>
+	                                            <option><p>Agama Anda...</p></option>
+	                                            <option value="1">Islam</option>
+	                                            <option value="2">Kristen</option>
+	                                            <option value="3">Katholik</option>
+	                                            <option value="4">Hindu</option>
+	                                            <option value="5">Budha</option>
+	                                            <option value="6">Konghuchu</option>
+	                                        </select> 
+	                                        <div class="help-block with-errors"></div>  
+	                                    </div>
+	                                </div>
+
+	                                <div class="form-group row">
+	                                    <label for="pekerjaan0" class="col-sm-2 col-form-label">Pekerjaan</label>
+	                                    <div class="col-md-10 mb-3">
+	                                        <input type="text" class="form-control" id="pekerjaan0" placeholder="Tuliskan pekerjaan Anda saat ini..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_tinggal0" class="col-sm-2 col-form-label">Alamat</label>
+	                                    <div class="form-group col-md-4 mb-3 mt-2">
+	                                        <label for="desa0">Desa</label>
+	                                        <input type="text" class="form-control" id="desa0" placeholder="Alamat desa, jalan, nomor rumah, kecamatan..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="kabupaten0">Kabupaten/Kota</label>
+	                                        <input type="text" class="form-control" id="kabupaten0" placeholder="Alamat Kecamatan Anda..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="provinsi0">Provinsi</label>
+	                                            <select id="provinsi1" class="custom-select custom-select-md" height="30pt" required>
+	                                                <option value="" selected disabled><p>Provinsi...</p></option>
+	                                                <option value="1">Aceh</option>
+	                                                <option value="2">Banten</option>
+	                                                <option value="3">Bengkulu</option>
+	                                                <option value="4">Gorontalo</option>
+	                                                <option value="5">Jakarta</option>
+	                                                <option value="6">Jambi</option>
+	                                                <option value="7">Jawa Barat</option>
+	                                                <option value="8">Jawa Tengah</option>
+	                                                <option value="9">Jawa Timur</option>
+	                                                <option value="10">Kalimantan Barat</option>
+	                                                <option value="11">Kalimantan Selatan</option>
+	                                                <option value="12">Kalimantan Tengah</option>
+	                                                <option value="13">Kalimantan Timur</option>
+	                                                <option value="14">Kalimantan Utara</option>
+	                                                <option value="15">Kepulauan Bangka Belitung</option>
+	                                                <option value="16">Kepulauan Riau</option>
+	                                                <option value="17">Lampung</option>
+	                                                <option value="18">Maluku</option>
+	                                                <option value="19">Maluku Utara</option>
+	                                                <option value="20">Bali</option>
+	                                                <option value="21">Nusa Tenggara Barat</option>
+	                                                <option value="22">Nusa Tenggara Timur</option>
+	                                                <option value="23">Papua</option>
+	                                                <option value="24">Papua Barat</option><option value="6">Riau</option>
+	                                                <option value="25">Sulawesi Barat</option>
+	                                                <option value="26">Sulawesi Selatan</option>
+	                                                <option value="27">Sulawesi Tengah</option>
+	                                                <option value="28">Sulawesi Tenggara</option>
+	                                                <option value="29">Sulawesi Utara</option>
+	                                                <option value="30">Sumatra Barat</option>
+	                                                <option value="31">Sumatra Selatan</option>
+	                                                <option value="32">Sumatra Utara</option>
+	                                                <option value="33">Yogyakarta</option>
+	                                              </select>
+	                                        <div class="help-block with-errors"></div> 
+	                                     </div>
+	                                </div>                  
+	                            </div>
+	                        </div>
+	                        <div id="step-2" class="mt-1">
+	                            <h2 class="mt-3" style="font-weight: bold; color: #6c757d">Formulir untuk Calon Istri</h2>
+	                            <hr>
+	                            <h6 class="mb-4" style="color :grey; font-style: italic">*) Berisi identitas untuk calon istri sesuai dengan kartu identitas yang Anda punya</h6>
+	                            <div id="form-step-1" role="form" data-toggle="validator">
+	                                <div class="form-group row">
+	                                    <label for="nama_lengkap1" class="col-sm-2 col-form-label">Nama Lengkap </label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="nama_lengkap1" placeholder="Tuliskan nama lengkap Anda sesuai KTP..." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_lahir1" class="col-sm-2 col-form-label">Tempat Lahir  </label>
+	                                    <div class="col-sm-3 mb-0">
+	                                        <input type="text" class="form-control" id="tempat_lahir1" placeholder="Tempat lahir Anda.." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tanggal_lahir1" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+	                                    <div class="col-sm-2 mb-0">
+	                                        <input type="number" class="form-control" id="hari_lahir1" placeholder="Hari" min="1" max="30" required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>                         
+	                                    <div class="form-group col-sm-5 mb-0">
+	                                        <select id="bulan_lahir1" class="custom-select custom-select-md" required>
+	                                            <option value="" selected disabled>Bulan...</option>
+	                                            <option value="1">Januari</option>
+	                                            <option value="2">Februari</option>
+	                                            <option value="3">Maret</option>
+	                                            <option value="4">April</option>
+	                                            <option value="5">Mei</option>
+	                                            <option value="6">Juni</option>
+	                                            <option value="7">Juli</option>
+	                                            <option value="8">Agustus</option>
+	                                            <option value="9">September</option>
+	                                            <option value="10">Oktober</option>
+	                                            <option value="11">November</option>
+	                                            <option value="12">Desember</option>
+	                                        </select>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                    <div class="form-group col-sm-3 mb-0">
+	                                        <input type="number" class="form-control" id="tahun_lahir1" placeholder="Tahun" min="1900" max="2019" required>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="status1" class="col-sm-2 col-form-label">Warga negara</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="status1" placeholder="Tuliskan kewarganegaraan Anda sesuai Kartu Identitas..." required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="agama1" class="col-sm-2 col-form-label">Agama</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <select id="agama1" class="custom-select custom-select-md" required>
+	                                            <option><p>Agama Anda...</p></option>
+	                                            <option value="1">Islam</option>
+	                                            <option value="2">Kristen</option>
+	                                            <option value="3">Katholik</option>
+	                                            <option value="4">Hindu</option>
+	                                            <option value="5">Budha</option>
+	                                            <option value="6">Konghuchu</option>
+	                                        </select> 
+	                                        <div class="help-block with-errors"></div>  
+	                                    </div>
+	                                </div>
+
+	                                <div class="form-group row">
+	                                    <label for="pekerjaan1" class="col-sm-2 col-form-label">Pekerjaan</label>
+	                                    <div class="col-md-10 mb-3">
+	                                        <input type="text" class="form-control" id="pekerjaan1" placeholder="Tuliskan pekerjaan Anda saat ini..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_tinggal1" class="col-sm-2 col-form-label">Alamat</label>
+	                                    <div class="form-group col-md-4 mb-3 mt-2">
+	                                        <label for="desa1">Desa</label>
+	                                        <input type="text" class="form-control" id="desa1" placeholder="Alamat desa, jalan, nomor rumah, kecamatan..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="kabupaten1">Kabupaten/Kota</label>
+	                                        <input type="text" class="form-control" id="kabupaten1" placeholder="Alamat Kecamatan Anda..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="provinsi1">Provinsi</label>
+	                                            <select id="provinsi1" class="custom-select custom-select-md" height="30pt" required>
+	                                                <option value="" selected disabled><p>Provinsi...</p></option>
+	                                                <option value="1">Aceh</option>
+	                                                <option value="2">Banten</option>
+	                                                <option value="3">Bengkulu</option>
+	                                                <option value="4">Gorontalo</option>
+	                                                <option value="5">Jakarta</option>
+	                                                <option value="6">Jambi</option>
+	                                                <option value="7">Jawa Barat</option>
+	                                                <option value="8">Jawa Tengah</option>
+	                                                <option value="9">Jawa Timur</option>
+	                                                <option value="10">Kalimantan Barat</option>
+	                                                <option value="11">Kalimantan Selatan</option>
+	                                                <option value="12">Kalimantan Tengah</option>
+	                                                <option value="13">Kalimantan Timur</option>
+	                                                <option value="14">Kalimantan Utara</option>
+	                                                <option value="15">Kepulauan Bangka Belitung</option>
+	                                                <option value="16">Kepulauan Riau</option>
+	                                                <option value="17">Lampung</option>
+	                                                <option value="18">Maluku</option>
+	                                                <option value="19">Maluku Utara</option>
+	                                                <option value="20">Bali</option>
+	                                                <option value="21">Nusa Tenggara Barat</option>
+	                                                <option value="22">Nusa Tenggara Timur</option>
+	                                                <option value="23">Papua</option>
+	                                                <option value="24">Papua Barat</option><option value="6">Riau</option>
+	                                                <option value="25">Sulawesi Barat</option>
+	                                                <option value="26">Sulawesi Selatan</option>
+	                                                <option value="27">Sulawesi Tengah</option>
+	                                                <option value="28">Sulawesi Tenggara</option>
+	                                                <option value="29">Sulawesi Utara</option>
+	                                                <option value="30">Sumatra Barat</option>
+	                                                <option value="31">Sumatra Selatan</option>
+	                                                <option value="32">Sumatra Utara</option>
+	                                                <option value="33">Yogyakarta</option>
+	                                              </select>
+	                                        <div class="help-block with-errors"></div> 
+	                                     </div>
+	                                </div>                  
+	                            </div>
+	                        </div>
+	                        <div id="step-3" class="mt-1">
+	                            <h2 class="mt-3" style="font-weight: bold; color: #6c757d">Formulir Keterangan Izin Orang Tua/Wali Suami</h2>
+	                            <hr>
+	                            <h6 class="mb-4" style="color :grey; font-style: italic">*) Berisi identitas untuk orang tua mempelai (suami) sesuai dengan kartu identitas yang ada</h6>
+
+	                            <h4 class="mt-5" style="font-weight: bold; color: #6c757d">Data Diri Ayah</h4>
+	                            <div id="form-step-2" role="form" data-toggle="validator">
+	                                <div class="form-group row">
+	                                    <label for="nama_lengkap2" class="col-sm-2 col-form-label">Nama Lengkap </label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="nama_lengkap2" placeholder="Tuliskan nama lengkap Anda sesuai KTP..." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_lahir2" class="col-sm-2 col-form-label">Tempat Lahir  </label>
+	                                    <div class="col-sm-3 mb-0">
+	                                        <input type="text" class="form-control" id="tempat_lahir2" placeholder="Tempat lahir Anda.." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tanggal_lahir2" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+	                                    <div class="col-sm-2 mb-0">
+	                                        <input type="number" class="form-control" id="hari_lahir2" placeholder="Hari" min="1" max="30" required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>                         
+	                                    <div class="form-group col-sm-5 mb-0">
+	                                        <select id="bulan_lahir2" class="custom-select custom-select-md" required>
+	                                            <option value="" selected disabled>Bulan...</option>
+	                                            <option value="1">Januari</option>
+	                                            <option value="2">Februari</option>
+	                                            <option value="3">Maret</option>
+	                                            <option value="4">April</option>
+	                                            <option value="5">Mei</option>
+	                                            <option value="6">Juni</option>
+	                                            <option value="7">Juli</option>
+	                                            <option value="8">Agustus</option>
+	                                            <option value="9">September</option>
+	                                            <option value="10">Oktober</option>
+	                                            <option value="11">November</option>
+	                                            <option value="12">Desember</option>
+	                                        </select>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                    <div class="form-group col-sm-3 mb-0">
+	                                        <input type="number" class="form-control" id="tahun_lahir2" placeholder="Tahun" min="1900" max="2019" required>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="status2" class="col-sm-2 col-form-label">Warga negara</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="status2" placeholder="Tuliskan kewarganegaraan Anda sesuai Kartu Identitas..." required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="agama2" class="col-sm-2 col-form-label">Agama</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <select id="agama2" class="custom-select custom-select-md" required>
+	                                            <option><p>Agama Anda...</p></option>
+	                                            <option value="1">Islam</option>
+	                                            <option value="2">Kristen</option>
+	                                            <option value="3">Katholik</option>
+	                                            <option value="4">Hindu</option>
+	                                            <option value="5">Budha</option>
+	                                            <option value="6">Konghuchu</option>
+	                                        </select> 
+	                                        <div class="help-block with-errors"></div>  
+	                                    </div>
+	                                </div>
+
+	                                <div class="form-group row">
+	                                    <label for="pekerjaan2" class="col-sm-2 col-form-label">Pekerjaan</label>
+	                                    <div class="col-md-10 mb-3">
+	                                        <input type="text" class="form-control" id="pekerjaan2" placeholder="Tuliskan pekerjaan Anda saat ini..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_tinggal2" class="col-sm-2 col-form-label">Alamat</label>
+	                                    <div class="form-group col-md-4 mb-3 mt-2">
+	                                        <label for="desa1">Desa</label>
+	                                        <input type="text" class="form-control" id="desa2" placeholder="Alamat desa, jalan, nomor rumah, kecamatan..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="kabupaten2">Kabupaten/Kota</label>
+	                                        <input type="text" class="form-control" id="kabupaten2" placeholder="Alamat Kecamatan Anda..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="provinsi2">Provinsi</label>
+	                                            <select id="provinsi2" class="custom-select custom-select-md" height="30pt" required>
+	                                                <option value="" selected disabled><p>Provinsi...</p></option>
+	                                                <option value="1">Aceh</option>
+	                                                <option value="2">Banten</option>
+	                                                <option value="3">Bengkulu</option>
+	                                                <option value="4">Gorontalo</option>
+	                                                <option value="5">Jakarta</option>
+	                                                <option value="6">Jambi</option>
+	                                                <option value="7">Jawa Barat</option>
+	                                                <option value="8">Jawa Tengah</option>
+	                                                <option value="9">Jawa Timur</option>
+	                                                <option value="10">Kalimantan Barat</option>
+	                                                <option value="11">Kalimantan Selatan</option>
+	                                                <option value="12">Kalimantan Tengah</option>
+	                                                <option value="13">Kalimantan Timur</option>
+	                                                <option value="14">Kalimantan Utara</option>
+	                                                <option value="15">Kepulauan Bangka Belitung</option>
+	                                                <option value="16">Kepulauan Riau</option>
+	                                                <option value="17">Lampung</option>
+	                                                <option value="18">Maluku</option>
+	                                                <option value="19">Maluku Utara</option>
+	                                                <option value="20">Bali</option>
+	                                                <option value="21">Nusa Tenggara Barat</option>
+	                                                <option value="22">Nusa Tenggara Timur</option>
+	                                                <option value="23">Papua</option>
+	                                                <option value="24">Papua Barat</option><option value="6">Riau</option>
+	                                                <option value="25">Sulawesi Barat</option>
+	                                                <option value="26">Sulawesi Selatan</option>
+	                                                <option value="27">Sulawesi Tengah</option>
+	                                                <option value="28">Sulawesi Tenggara</option>
+	                                                <option value="29">Sulawesi Utara</option>
+	                                                <option value="30">Sumatra Barat</option>
+	                                                <option value="31">Sumatra Selatan</option>
+	                                                <option value="32">Sumatra Utara</option>
+	                                                <option value="33">Yogyakarta</option>
+	                                              </select>
+	                                        <div class="help-block with-errors"></div> 
+	                                     </div>
+	                                </div>                  
+	                            <hr>
+	                            <h4 class="mt-5" style="font-weight: bold; color: #6c757d">Data Diri Ibu</h4>
+	                                <div class="form-group row">
+	                                    <label for="nama_lengkap3" class="col-sm-2 col-form-label">Nama Lengkap </label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="nama_lengkap3" placeholder="Tuliskan nama lengkap Anda sesuai KTP..." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_lahir3" class="col-sm-2 col-form-label">Tempat Lahir  </label>
+	                                    <div class="col-sm-3 mb-0">
+	                                        <input type="text" class="form-control" id="tempat_lahir3" placeholder="Tempat lahir Anda.." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tanggal_lahir3" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+	                                    <div class="col-sm-2 mb-0">
+	                                        <input type="number" class="form-control" id="hari_lahir3" placeholder="Hari" min="1" max="30" required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>                         
+	                                    <div class="form-group col-sm-5 mb-0">
+	                                        <select id="bulan_lahir3" class="custom-select custom-select-md" required>
+	                                            <option value="" selected disabled>Bulan...</option>
+	                                            <option value="1">Januari</option>
+	                                            <option value="2">Februari</option>
+	                                            <option value="3">Maret</option>
+	                                            <option value="4">April</option>
+	                                            <option value="5">Mei</option>
+	                                            <option value="6">Juni</option>
+	                                            <option value="7">Juli</option>
+	                                            <option value="8">Agustus</option>
+	                                            <option value="9">September</option>
+	                                            <option value="10">Oktober</option>
+	                                            <option value="11">November</option>
+	                                            <option value="12">Desember</option>
+	                                        </select>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                    <div class="form-group col-sm-3 mb-0">
+	                                        <input type="number" class="form-control" id="tahun_lahir3" placeholder="Tahun" min="1900" max="2019" required>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="status3" class="col-sm-2 col-form-label">Warga negara</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="status3" placeholder="Tuliskan kewarganegaraan Anda sesuai Kartu Identitas..." required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="agama3" class="col-sm-2 col-form-label">Agama</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <select id="agama3" class="custom-select custom-select-md" required>
+	                                            <option><p>Agama Anda...</p></option>
+	                                            <option value="1">Islam</option>
+	                                            <option value="2">Kristen</option>
+	                                            <option value="3">Katholik</option>
+	                                            <option value="4">Hindu</option>
+	                                            <option value="5">Budha</option>
+	                                            <option value="6">Konghuchu</option>
+	                                        </select> 
+	                                        <div class="help-block with-errors"></div>  
+	                                    </div>
+	                                </div>
+
+	                                <div class="form-group row">
+	                                    <label for="pekerjaan3" class="col-sm-2 col-form-label">Pekerjaan</label>
+	                                    <div class="col-md-10 mb-3">
+	                                        <input type="text" class="form-control" id="pekerjaan3" placeholder="Tuliskan pekerjaan Anda saat ini..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_tinggal3" class="col-sm-2 col-form-label">Alamat</label>
+	                                    <div class="form-group col-md-4 mb-3 mt-2">
+	                                        <label for="desa3">Desa</label>
+	                                        <input type="text" class="form-control" id="desa3" placeholder="Alamat desa, jalan, nomor rumah, kecamatan..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="kabupaten3">Kabupaten/Kota</label>
+	                                        <input type="text" class="form-control" id="kabupaten3" placeholder="Alamat Kecamatan Anda..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="provinsi3">Provinsi</label>
+	                                            <select id="provinsi3" class="custom-select custom-select-md" height="30pt" required>
+	                                                <option value="" selected disabled><p>Provinsi...</p></option>
+	                                                <option value="1">Aceh</option>
+	                                                <option value="2">Banten</option>
+	                                                <option value="3">Bengkulu</option>
+	                                                <option value="4">Gorontalo</option>
+	                                                <option value="5">Jakarta</option>
+	                                                <option value="6">Jambi</option>
+	                                                <option value="7">Jawa Barat</option>
+	                                                <option value="8">Jawa Tengah</option>
+	                                                <option value="9">Jawa Timur</option>
+	                                                <option value="10">Kalimantan Barat</option>
+	                                                <option value="11">Kalimantan Selatan</option>
+	                                                <option value="12">Kalimantan Tengah</option>
+	                                                <option value="13">Kalimantan Timur</option>
+	                                                <option value="14">Kalimantan Utara</option>
+	                                                <option value="15">Kepulauan Bangka Belitung</option>
+	                                                <option value="16">Kepulauan Riau</option>
+	                                                <option value="17">Lampung</option>
+	                                                <option value="18">Maluku</option>
+	                                                <option value="19">Maluku Utara</option>
+	                                                <option value="20">Bali</option>
+	                                                <option value="21">Nusa Tenggara Barat</option>
+	                                                <option value="22">Nusa Tenggara Timur</option>
+	                                                <option value="23">Papua</option>
+	                                                <option value="24">Papua Barat</option><option value="6">Riau</option>
+	                                                <option value="25">Sulawesi Barat</option>
+	                                                <option value="26">Sulawesi Selatan</option>
+	                                                <option value="27">Sulawesi Tengah</option>
+	                                                <option value="28">Sulawesi Tenggara</option>
+	                                                <option value="29">Sulawesi Utara</option>
+	                                                <option value="30">Sumatra Barat</option>
+	                                                <option value="31">Sumatra Selatan</option>
+	                                                <option value="32">Sumatra Utara</option>
+	                                                <option value="33">Yogyakarta</option>
+	                                              </select>
+	                                        <div class="help-block with-errors"></div> 
+	                                     </div>
+	                                </div>                  
+	                            </div>
+	                        </div>
+	                        <div id="step-4" class="mt-1">
+	                            <h2 class="mt-3" style="font-weight: bold; color: #6c757d">Formulir Keterangan Izin Orang Tua/Wali Istri</h2>
+	                            <hr>
+	                            <h6 class="mb-4" style="color :grey; font-style: italic">*) Berisi identitas untuk orang tua mempelai (istri) sesuai dengan kartu identitas yang ada</h6>
+
+	                            <h4 class="mt-5" style="font-weight: bold; color: #6c757d">Data Diri Ayah</h4>
+	                            <div id="form-step-3" role="form" data-toggle="validator">
+	                                <div class="form-group row">
+	                                    <label for="nama_lengkap4" class="col-sm-2 col-form-label">Nama Lengkap </label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="nama_lengkap4" placeholder="Tuliskan nama lengkap Anda sesuai KTP..." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_lahir4" class="col-sm-2 col-form-label">Tempat Lahir  </label>
+	                                    <div class="col-sm-3 mb-0">
+	                                        <input type="text" class="form-control" id="tempat_lahir4" placeholder="Tempat lahir Anda.." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tanggal_lahir4" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+	                                    <div class="col-sm-2 mb-0">
+	                                        <input type="number" class="form-control" id="hari_lahir4" placeholder="Hari" min="1" max="30" required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>                         
+	                                    <div class="form-group col-sm-5 mb-0">
+	                                        <select id="bulan_lahir4" class="custom-select custom-select-md" required>
+	                                            <option value="" selected disabled>Bulan...</option>
+	                                            <option value="1">Januari</option>
+	                                            <option value="2">Februari</option>
+	                                            <option value="3">Maret</option>
+	                                            <option value="4">April</option>
+	                                            <option value="5">Mei</option>
+	                                            <option value="6">Juni</option>
+	                                            <option value="7">Juli</option>
+	                                            <option value="8">Agustus</option>
+	                                            <option value="9">September</option>
+	                                            <option value="10">Oktober</option>
+	                                            <option value="11">November</option>
+	                                            <option value="12">Desember</option>
+	                                        </select>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                    <div class="form-group col-sm-3 mb-0">
+	                                        <input type="number" class="form-control" id="tahun_lahir4" placeholder="Tahun" min="1900" max="2019" required>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="status4" class="col-sm-2 col-form-label">Warga negara</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="status4" placeholder="Tuliskan kewarganegaraan Anda sesuai Kartu Identitas..." required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="agama4" class="col-sm-2 col-form-label">Agama</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <select id="agama4" class="custom-select custom-select-md" required>
+	                                            <option><p>Agama Anda...</p></option>
+	                                            <option value="1">Islam</option>
+	                                            <option value="2">Kristen</option>
+	                                            <option value="3">Katholik</option>
+	                                            <option value="4">Hindu</option>
+	                                            <option value="5">Budha</option>
+	                                            <option value="6">Konghuchu</option>
+	                                        </select> 
+	                                        <div class="help-block with-errors"></div>  
+	                                    </div>
+	                                </div>
+	 
+	                                <div class="form-group row">
+	                                    <label for="pekerjaan4" class="col-sm-2 col-form-label">Pekerjaan</label>
+	                                    <div class="col-md-10 mb-3">
+	                                        <input type="text" class="form-control" id="pekerjaan4" placeholder="Tuliskan pekerjaan Anda saat ini..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_tinggal4" class="col-sm-2 col-form-label">Alamat</label>
+	                                    <div class="form-group col-md-4 mb-3 mt-2">
+	                                        <label for="desa4">Desa</label>
+	                                        <input type="text" class="form-control" id="desa4" placeholder="Alamat desa, jalan, nomor rumah, kecamatan..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="kabupaten4">Kabupaten/Kota</label>
+	                                        <input type="text" class="form-control" id="kabupaten4" placeholder="Alamat Kecamatan Anda..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="provinsi4">Provinsi</label>
+	                                            <select id="provinsi4" class="custom-select custom-select-md" height="30pt" required>
+	                                                <option value="" selected disabled><p>Provinsi...</p></option>
+	                                                <option value="1">Aceh</option>
+	                                                <option value="2">Banten</option>
+	                                                <option value="3">Bengkulu</option>
+	                                                <option value="4">Gorontalo</option>
+	                                                <option value="5">Jakarta</option>
+	                                                <option value="6">Jambi</option>
+	                                                <option value="7">Jawa Barat</option>
+	                                                <option value="8">Jawa Tengah</option>
+	                                                <option value="9">Jawa Timur</option>
+	                                                <option value="10">Kalimantan Barat</option>
+	                                                <option value="11">Kalimantan Selatan</option>
+	                                                <option value="12">Kalimantan Tengah</option>
+	                                                <option value="13">Kalimantan Timur</option>
+	                                                <option value="14">Kalimantan Utara</option>
+	                                                <option value="15">Kepulauan Bangka Belitung</option>
+	                                                <option value="16">Kepulauan Riau</option>
+	                                                <option value="17">Lampung</option>
+	                                                <option value="18">Maluku</option>
+	                                                <option value="19">Maluku Utara</option>
+	                                                <option value="20">Bali</option>
+	                                                <option value="21">Nusa Tenggara Barat</option>
+	                                                <option value="22">Nusa Tenggara Timur</option>
+	                                                <option value="23">Papua</option>
+	                                                <option value="24">Papua Barat</option><option value="6">Riau</option>
+	                                                <option value="25">Sulawesi Barat</option>
+	                                                <option value="26">Sulawesi Selatan</option>
+	                                                <option value="27">Sulawesi Tengah</option>
+	                                                <option value="28">Sulawesi Tenggara</option>
+	                                                <option value="29">Sulawesi Utara</option>
+	                                                <option value="30">Sumatra Barat</option>
+	                                                <option value="31">Sumatra Selatan</option>
+	                                                <option value="32">Sumatra Utara</option>
+	                                                <option value="33">Yogyakarta</option>
+	                                              </select>
+	                                        <div class="help-block with-errors"></div> 
+	                                     </div>
+	                                </div>                  
+
+	                            <hr>
+	                            <h4 class="mt-5" style="font-weight: bold; color: #6c757d">Data Diri Ibu</h4>
+	                                <div class="form-group row">
+	                                    <label for="nama_lengkap5" class="col-sm-2 col-form-label">Nama Lengkap </label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="nama_lengkap5" placeholder="Tuliskan nama lengkap Anda sesuai KTP..." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_lahir5" class="col-sm-2 col-form-label">Tempat Lahir  </label>
+	                                    <div class="col-sm-3 mb-0">
+	                                        <input type="text" class="form-control" id="tempat_lahir5" placeholder="Tempat lahir Anda.." required>
+	                                    <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tanggal_lahir5" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+	                                    <div class="col-sm-2 mb-0">
+	                                        <input type="number" class="form-control" id="hari_lahir5" placeholder="Hari" min="1" max="30" required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>                         
+	                                    <div class="form-group col-sm-5 mb-0">
+	                                        <select id="bulan_lahir5" class="custom-select custom-select-md" required>
+	                                            <option value="" selected disabled>Bulan...</option>
+	                                            <option value="1">Januari</option>
+	                                            <option value="2">Februari</option>
+	                                            <option value="3">Maret</option>
+	                                            <option value="4">April</option>
+	                                            <option value="5">Mei</option>
+	                                            <option value="6">Juni</option>
+	                                            <option value="7">Juli</option>
+	                                            <option value="8">Agustus</option>
+	                                            <option value="9">September</option>
+	                                            <option value="10">Oktober</option>
+	                                            <option value="11">November</option>
+	                                            <option value="12">Desember</option>
+	                                        </select>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                    <div class="form-group col-sm-3 mb-0">
+	                                        <input type="number" class="form-control" id="tahun_lahir5" placeholder="Tahun" min="1900" max="2019" required>
+	                                        <div class="help-block with-errors"></div>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="status5" class="col-sm-2 col-form-label">Warga negara</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <input type="text" class="form-control" id="status5" placeholder="Tuliskan kewarganegaraan Anda sesuai Kartu Identitas..." required>
+	                                        <div class="help-block with-errors"></div>   
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="agama5" class="col-sm-2 col-form-label">Agama</label>
+	                                    <div class="col-sm-10 mb-0">
+	                                        <select id="agama5" class="custom-select custom-select-md" required>
+	                                            <option><p>Agama Anda...</p></option>
+	                                            <option value="1">Islam</option>
+	                                            <option value="2">Kristen</option>
+	                                            <option value="3">Katholik</option>
+	                                            <option value="4">Hindu</option>
+	                                            <option value="5">Budha</option>
+	                                            <option value="6">Konghuchu</option>
+	                                        </select> 
+	                                        <div class="help-block with-errors"></div>  
+	                                    </div>
+	                                </div>
+
+	                                <div class="form-group row">
+	                                    <label for="pekerjaan5" class="col-sm-2 col-form-label">Pekerjaan</label>
+	                                    <div class="col-md-10 mb-3">
+	                                        <input type="text" class="form-control" id="pekerjaan5" placeholder="Tuliskan pekerjaan Anda saat ini..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                </div>
+	                                <div class="form-group row">
+	                                    <label for="tempat_tinggal5" class="col-sm-2 col-form-label">Alamat</label>
+	                                    <div class="form-group col-md-4 mb-3 mt-2">
+	                                        <label for="desa5">Desa</label>
+	                                        <input type="text" class="form-control" id="desa0" placeholder="Alamat desa, jalan, nomor rumah, kecamatan..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="kabupaten5">Kabupaten/Kota</label>
+	                                        <input type="text" class="form-control" id="kabupaten0" placeholder="Alamat Kecamatan Anda..." required>
+	                                        <div class="help-block with-errors"></div> 
+	                                    </div>
+	                                    <div class="form-group col-md-3 mb-3 mt-2">
+	                                        <label for="provinsi5">Provinsi</label>
+	                                            <select id="provinsi5" class="custom-select custom-select-md" height="30pt" required>
+	                                                <option value="" selected disabled><p>Provinsi...</p></option>
+	                                                <option value="1">Aceh</option>
+	                                                <option value="2">Banten</option>
+	                                                <option value="3">Bengkulu</option>
+	                                                <option value="4">Gorontalo</option>
+	                                                <option value="5">Jakarta</option>
+	                                                <option value="6">Jambi</option>
+	                                                <option value="7">Jawa Barat</option>
+	                                                <option value="8">Jawa Tengah</option>
+	                                                <option value="9">Jawa Timur</option>
+	                                                <option value="10">Kalimantan Barat</option>
+	                                                <option value="11">Kalimantan Selatan</option>
+	                                                <option value="12">Kalimantan Tengah</option>
+	                                                <option value="13">Kalimantan Timur</option>
+	                                                <option value="14">Kalimantan Utara</option>
+	                                                <option value="15">Kepulauan Bangka Belitung</option>
+	                                                <option value="16">Kepulauan Riau</option>
+	                                                <option value="17">Lampung</option>
+	                                                <option value="18">Maluku</option>
+	                                                <option value="19">Maluku Utara</option>
+	                                                <option value="20">Bali</option>
+	                                                <option value="21">Nusa Tenggara Barat</option>
+	                                                <option value="22">Nusa Tenggara Timur</option>
+	                                                <option value="23">Papua</option>
+	                                                <option value="24">Papua Barat</option><option value="6">Riau</option>
+	                                                <option value="25">Sulawesi Barat</option>
+	                                                <option value="26">Sulawesi Selatan</option>
+	                                                <option value="27">Sulawesi Tengah</option>
+	                                                <option value="28">Sulawesi Tenggara</option>
+	                                                <option value="29">Sulawesi Utara</option>
+	                                                <option value="30">Sumatra Barat</option>
+	                                                <option value="31">Sumatra Selatan</option>
+	                                                <option value="32">Sumatra Utara</option>
+	                                                <option value="33">Yogyakarta</option>
+	                                              </select>
+	                                        <div class="help-block with-errors"></div> 
+	                                     </div>
+	                                </div>                  
+	                            </div>
+	                        </div>
+	                        <div id="step-5" class="mt-1">
+	                            <h2>Verifikasi</h2>
+	                            <p>
+	                                 <br>
+	                                 Silahkan mengecek kembali data Anda, sistem akan otomatis menyimpan data setalah Anda menyetujui dan yakin terhadap kesahihan data Anda.
+	                                 <br><br>
+	                                 Terima kasih telah mendaftaran diri Anda di NNikah.pens.ac.id. Langkah terakhir adalah persetujuan antara kami dan Anda dalam perihal data yang telah Anda simpan kepada kami. Silahkan <b>mencentang kotak persetujuan</b> yang menandakan bahwa Anda telah membaca dan menyetujui peraturan dan kondisi data Anda <a href="pens.ac.id">disini</a>.
+	                            </p>
+	                            <div id="form-step-6" role="form" data-toggle="validator">
+	                                <div class="form-group">
+	                                    <label for="terms" style="font-weight: bold">Saya yakin & setuju </label>
+	                                    <input type="checkbox" id="terms" data-error="Centang disini" required>
+	                                    <div class="help-block with-errors"></div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+<!-- 	                </form>   -->  
+	            </div>
+	        </div>
+	    </div>
+    </div>
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include jQuery Validator plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Include SmartWizard JavaScript source -->
+    <!-- <script src="http://techlaboratory.net/demos/SmartWizard43/dist/js/jquery.smartWizard.min.js"></script> -->
+    <script type="text/javascript">
+        //validasi
+        $(document).ready(function(){
+
+            // Toolbar extra buttons
+            var btnFinish = $('<button></button>').text('Finish')
+                                             .addClass('btn btn-info')
+                                             .on('click', function(){
+                                                    if( !$(this).hasClass('disabled')){
+                                                        var elmForm = $("#myForm");
+                                                        if(elmForm){
+                                                            elmForm.validator('validate');
+                                                            var elmErr = elmForm.find('.has-error');
+                                                            if(elmErr && elmErr.length > 0){
+                                                                alert('Data tidak tersimpan, silahkan cek ulang data Anda!');
+                                                                return false;
+                                                            }else{
+                                                                alert('Data telah tersimpan, silahkan tunggu berkas Anda!');
+                                                                elmForm.submit();
+                                                                return false;
+                                                            }
+                                                        }
+                                                    }
+                                                });
+            var btnCancel = $('<button></button>').text('Cancel')
+                                             .addClass('btn btn-danger')
+                                             .on('click', function(){
+                                                    $('#smartwizard').smartWizard("reset");
+                                                    $('#myForm').find("input, textarea").val("");
+                                                });
+
+
+
+            // Smart Wizard
+            $('#smartwizard').smartWizard({
+                    selected: 0,
+                    theme: 'dots',
+                    transitionEffect:'fade',
+                    lang : {next: 'Selanjutnya', previous: 'Kembali'},
+                    toolbarSettings: {toolbarPosition: 'bottom',
+                                      toolbarExtraButtons: [btnFinish, btnCancel]
+                                    },
+                    anchorSettings: {
+                                markDoneStep: true, // add done css
+                                markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+                                removeDoneStepOnNavigateBack: true, // While navigate back done step after active step will be cleared
+                                enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+                            }
+                 });
+
+            $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
+                var elmForm = $("#form-step-" + stepNumber);
+                // stepDirection === 'forward' :- this condition allows to do the form validation
+                // only on forward navigation, that makes easy navigation on backwards still do the validation when going next
+                if(stepDirection === 'forward' && elmForm){
+                    elmForm.validator('validate');
+                    var elmErr = elmForm.children('.has-error');
+                    if(elmErr && elmErr.length > 0){
+                        // Form validation failed
+                        return false;
+                    }
+                }
+                return true;
+            });
+
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+                // Enable finish button only on last step
+                if(stepNumber == 6){
+                    $('.btn-finish').removeClass('disabled');
+                }else{
+                    $('.btn-finish').addClass('disabled');
+                }
+            });
+
+        });
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+                    if($('button.sw-btn-next').hasClass('disabled')){
+                        $('.sw-btn-group-extra').show(); // show the button extra only in the last page
+                    }else{
+                        $('.sw-btn-group-extra').hide();                
+                    }
+
+                  });
+    </script>
+</body>
+</html>

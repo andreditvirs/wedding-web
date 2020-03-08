@@ -1,0 +1,15 @@
+=IIf(Left([Nrp],3)="TIK","Teknik Informatika",IIf(Left([Nrp],2)="TK","Teknik Komputer","Salah Jurusan"))
+
+=IIf([NilaiAngka]>81,"A",
+	IIf([NilaiAngka]>71,"AB",
+		IIf(([NilaiAngka]>66,"B",
+			IIf([NilaiAngka]>61,"BC",
+				IIf([NilaiAngka]>56,"C",
+					IIf([NilaiAngka]>41,"D",
+						IIf([NilaiAngka]>0,"E","Salah")
+						)
+					)
+				)
+			)
+		)
+	)
